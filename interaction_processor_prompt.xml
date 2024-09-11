@@ -1,0 +1,147 @@
+<interaction_processor>
+  <metadata>
+    <processing_time>Current timestamp</processing_time>
+    <environment_type>Quantum Jungle</environment_type>
+  </metadata>
+
+  <environmental_context>
+    <current_conditions>
+      <time_of_day/>
+      <weather/>
+      <ambient_factors>
+        <temperature/>
+        <humidity/>
+        <light_level/>
+        <gravity/>
+      </ambient_factors>
+    </current_conditions>
+    <relevant_terrain_features>
+      <feature>
+        <name/>
+        <description/>
+        <location/>
+        <properties/>
+      </feature>
+      <!-- More features as needed -->
+    </relevant_terrain_features>
+    <quantum_state>
+      <superposed_elements/>
+      <entangled_objects/>
+      <uncertainty_zones/>
+    </quantum_state>
+  </environmental_context>
+
+  <npc_data>
+    <npc>
+      <id/>
+      <name/>
+      <current_state>
+        <physical_condition>
+          <health/>
+          <energy/>
+          <location/>
+        </physical_condition>
+        <emotional_state>
+          <primary_emotion/>
+          <intensity/>
+        </emotional_state>
+        <carrying_capacity/>
+        <skills>
+          <skill>
+            <name/>
+            <level/>
+          </skill>
+          <!-- More skills as needed -->
+        </skills>
+      </current_state>
+      <inventory>
+        <item>
+          <name/>
+          <quantity/>
+          <properties/>
+        </item>
+        <!-- More items as needed -->
+      </inventory>
+      <knowledge>
+        <known_info/>
+      </knowledge>
+    </npc>
+    <!-- Repeat for each involved NPC -->
+  </npc_data>
+
+  <action_queue>
+    <action>
+      <npc_id/>
+      <type>MOVE/INTERACT_ENTITY/INTERACT_ENVIRONMENT/USE_ITEM/OBSERVE</type>
+      <details>
+        <target_id/> <!-- For entity interactions -->
+        <direction/> <!-- For movement -->
+        <speed/> <!-- For movement -->
+        <item_id/> <!-- For item use -->
+        <interaction_type/> <!-- For specific interaction types -->
+        <!-- Other relevant details -->
+      </details>
+      <intention/>
+    </action>
+    <!-- More actions in the queue -->
+  </action_queue>
+
+  <interaction_guidelines>
+    <guideline>Consider the current environmental conditions and how they might affect the action outcomes.</guideline>
+    <guideline>Take into account the NPCs' physical and emotional states when resolving interactions.</guideline>
+    <guideline>Apply quantum effects where appropriate, allowing for probabilistic outcomes and unexpected results.</guideline>
+    <guideline>Ensure that action resolutions are consistent with the established rules of the environment and NPC capabilities.</guideline>
+    <guideline>Consider how actions might trigger reactions from other NPCs or environmental elements.</guideline>
+    <guideline>Allow for emergent behavior and complex chain reactions when appropriate.</guideline>
+  </interaction_guidelines>
+
+  <quantum_considerations>
+    <consideration>Actions involving superposed elements may collapse them into a definite state.</consideration>
+    <consideration>Entangled objects should influence each other's states when one is affected.</consideration>
+    <consideration>In uncertainty zones, action outcomes may have a higher degree of randomness.</consideration>
+    <consideration>Observer effects may alter the environment or other NPCs in subtle ways.</consideration>
+  </quantum_considerations>
+
+  <output_format>
+    <processed_action>
+      <npc_id/>
+      <action_type/>
+      <outcome>
+        <description/>
+        <affected_npcs>
+          <npc>
+            <id/>
+            <changes/>
+          </npc>
+          <!-- Repeat for each affected NPC -->
+        </affected_npcs>
+        <environmental_effects>
+          <effect>
+            <description/>
+            <magnitude/>
+          </effect>
+          <!-- More effects as needed -->
+        </environmental_effects>
+        <quantum_effects>
+          <effect>
+            <description/>
+            <implications/>
+          </effect>
+          <!-- More effects as needed -->
+        </quantum_effects>
+      </outcome>
+    </processed_action>
+    <!-- Repeat for each action in the queue -->
+    <emergent_events>
+      <event>
+        <description/>
+        <trigger/>
+        <consequences/>
+      </event>
+      <!-- More events if any -->
+    </emergent_events>
+    <updated_environment_state>
+      <changes/>
+    </updated_environment_state>
+  </output_format>
+</interaction_processor>

@@ -1,0 +1,16 @@
+You are an AI assistant tasked with updating the environment system prompt for a quantum-inspired game world. Your job is to analyze the interaction output and modify the existing environment prompt to reflect any changes in the game world's state, including emergent events and quantum phenomena.
+
+Current Environment System Prompt:
+{current_prompt}
+
+Interaction Output:
+{interaction_output}
+
+Instructions:
+1. Carefully examine the interaction output, paying special attention to environmental effects, emergent events, and changes to the quantum state of the world.
+2. Identify any significant changes to the environment, including new features, altered conditions, or shifts in quantum phenomena.
+3. Update the environment system prompt to incorporate these changes while maintaining consistency with the core rules and nature of the game world.
+4. Ensure that the updated prompt accurately reflects the current state of the environment, including any new or altered quantum effects.
+5. If there are no substantial changes to the environment, return the original prompt with minimal modifications.
+
+Please provide the updated environment system prompt. If no significant changes are necessary, return the original prompt with any minor adjustments you deem appropriate.

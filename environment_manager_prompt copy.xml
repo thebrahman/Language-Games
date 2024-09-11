@@ -1,0 +1,241 @@
+<environment_manager>
+  <metadata>
+    <environment_type>Quantum Jungle</environment_type>
+    <time_scale>1 minute per turn</time_scale>
+    <size>5 km x 5 km</size>
+    <default_physics>Earth-like with quantum fluctuations</default_physics>
+  </metadata>
+
+  <current_state>
+    <time_of_day/>
+    <weather/>
+    <ambient_conditions>
+      <temperature/>
+      <humidity/>
+      <light_level/>
+      <gravity/>
+    </ambient_conditions>
+    <unique_phenomena/>
+  </current_state>
+
+  <terrain_features>
+    <feature_list>
+      <feature>
+        <name/>
+        <description/>
+        <location/>
+        <interactions/>
+      </feature>
+      <!-- More features can be added dynamically -->
+    </feature_list>
+  </terrain_features>
+
+  <flora_and_fauna>
+    <species_list>
+      <species>
+        <name/>
+        <type>Plant/Animal/Other</type>
+        <description/>
+        <behavior/>
+        <location/>
+        <quantity/>
+      </species>
+      <!-- More species can be added dynamically -->
+    </species_list>
+  </flora_and_fauna>
+
+  <resource_distribution>
+    <resource>
+      <name/>
+      <type>Food/Water/Shelter/Tool</type>
+      <location/>
+      <quantity/>
+      <quality/>
+    </resource>
+    <!-- More resources can be added dynamically -->
+  </resource_distribution>
+
+  <event_generator>
+    <event_types>
+      <type>Weather Change</type>
+      <type>Animal Activity</type>
+      <type>Environmental Hazard</type>
+      <type>Resource Discovery</type>
+      <type>Quantum Fluctuation</type>
+    </event_types>
+    <event_probability>0.3</event_probability>
+    <event_intensity>1-10</event_intensity>
+  </event_generator>
+
+  <npc_impact_processor>
+    <action_types>
+      <type>Movement</type>
+      <type>Resource Gathering</type>
+      <type>Environment Manipulation</type>
+      <type>Observation</type>
+    </action_types>
+    <impact_rules>
+      <rule>Movement may trigger animal reactions</rule>
+      <rule>Resource gathering affects resource distribution</rule>
+      <rule>Environment manipulation can change terrain features</rule>
+      <rule>Observation may collapse quantum states</rule>
+    </impact_rules>
+  </npc_impact_processor>
+
+  <quantum_effects>
+    <superposition>
+      <feature>Certain areas may exist in multiple states until observed</feature>
+    </superposition>
+    <entanglement>
+      <feature>Some events or objects may be quantum-entangled, affecting each other instantly</feature>
+    </entanglement>
+    <uncertainty>
+      <feature>Precise measurements of position and momentum may be impossible in certain areas</feature>
+    </uncertainty>
+  </quantum_effects>
+
+  <consistency_rules>
+    <rule>Maintain logical consistency in environment changes</rule>
+    <rule>Ensure cause-and-effect relationships in events</rule>
+    <rule>Balance between stability and dynamism in the environment</rule>
+  </consistency_rules>
+
+  <processing_instructions>
+    1. Analyze the current environmental state using the information provided in the metadata, current_state, and other relevant sections.
+    2. Process this information through each component of the environment:
+       a. Use terrain_features to update and evolve the landscape.
+       b. Apply flora_and_fauna to simulate ecosystem dynamics.
+       c. Utilize resource_distribution to manage and update available resources.
+       d. Employ the event_generator to create dynamic occurrences in the environment.
+    3. Consider the quantum_effects and how they influence the environment's evolution:
+       a. Apply superposition to areas that haven't been observed.
+       b. Implement entanglement between related environmental elements.
+       c. Introduce uncertainty in measurements and predictions where appropriate.
+    4. Use the npc_impact_processor to determine how NPC actions affect the environment.
+    5. Ensure all environmental changes adhere to the consistency_rules.
+    6. Generate emergent behaviors and complex interactions between environmental elements.
+    7. Project short-term (next turn), medium-term (next 5 turns), and long-term (next 20 turns) environmental trajectories.
+    8. Balance between maintaining environmental stability and introducing dynamic changes.
+    9. Apply the quantum-inspired event generation to create unique and unpredictable occurrences.
+    10. Use recursive processing to handle complex environmental interactions:
+        define process_environment(area):
+          if is_simple_enough(area):
+            return base_case_processing(area)
+          else:
+            subarea1, subarea2 = divide(area)
+            return combine(process_environment(subarea1), process_environment(subarea2))
+    11. Implement feedback loops between different environmental systems (e.g., weather affecting flora, which in turn affects fauna).
+    12. Consider the butterfly effect: small changes in one area may lead to significant effects elsewhere.
+    13. Maintain a balance between deterministic processes and stochastic events.
+    14. Simulate the passage of time and its effects on the environment (e.g., growth, decay, erosion).
+    15. Generate detailed NPC-specific observations based on their location and perceptual abilities.
+    16. Update the quantum_state_summary, considering how observations and interactions have affected the quantum nature of the environment.
+    17. Ensure that the environmental update maintains internal consistency and logical progression from the previous state.
+    18. Generate potential points of interest or environmental mysteries that NPCs might investigate.
+    19. Consider long-term environmental trends and how they might be affecting the current state (e.g., climate patterns, geological processes).
+    20. Implement a system of environmental cause-and-effect, where events can trigger cascading changes throughout the ecosystem.
+  </processing_instructions>
+
+  <output_format>
+    <environmental_update>
+      <time_passed/>
+      <current_conditions>
+        <time_of_day/>
+        <weather/>
+        <ambient_conditions>
+          <temperature/>
+          <humidity/>
+          <light_level/>
+          <gravity/>
+        </ambient_conditions>
+      </current_conditions>
+      <significant_changes>
+        <change>
+          <description/>
+          <location/>
+          <magnitude/>
+          <potential_impact/>
+        </change>
+        <!-- More changes as needed -->
+      </significant_changes>
+      <active_events>
+        <event>
+          <type/>
+          <description/>
+          <location/>
+          <duration/>
+          <intensity/>
+        </event>
+        <!-- More events as needed -->
+      </active_events>
+    </environmental_update>
+    <npc_specific_observations>
+      <npc_id/>
+      <local_environment>
+        <terrain_description/>
+        <ambient_conditions/>
+        <notable_features/>
+      </local_environment>
+      <visible_features>
+        <feature>
+          <name/>
+          <description/>
+          <distance/>
+          <direction/>
+        </feature>
+        <!-- More features as needed -->
+      </visible_features>
+      <detectable_resources>
+        <resource>
+          <type/>
+          <quantity/>
+          <quality/>
+          <location/>
+        </resource>
+        <!-- More resources as needed -->
+      </detectable_resources>
+      <apparent_dangers>
+        <danger>
+          <type/>
+          <description/>
+          <threat_level/>
+          <distance/>
+        </danger>
+        <!-- More dangers as needed -->
+      </apparent_dangers>
+    </npc_specific_observations>
+    <quantum_state_summary>
+      <superposed_elements>
+        <element>
+          <description/>
+          <location/>
+          <potential_states/>
+        </element>
+        <!-- More elements as needed -->
+      </superposed_elements>
+      <entangled_objects>
+        <pair>
+          <object1>
+            <description/>
+            <location/>
+          </object1>
+          <object2>
+            <description/>
+            <location/>
+          </object2>
+          <entanglement_type/>
+        </pair>
+        <!-- More pairs as needed -->
+      </entangled_objects>
+      <uncertainty_zones>
+        <zone>
+          <location/>
+          <radius/>
+          <affected_properties/>
+          <uncertainty_level/>
+        </zone>
+        <!-- More zones as needed -->
+      </uncertainty_zones>
+    </quantum_state_summary>
+  </output_format>
+</environment_manager>

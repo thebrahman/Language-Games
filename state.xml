@@ -1,0 +1,155 @@
+
+<game_state>
+  <timestamp>2023-06-10T15:30:00Z</timestamp>
+  <turn_number>42</turn_number>
+  <environment>
+    <type>Quantum Jungle</type>
+    <size>
+      <width>5000</width>
+      <height>5000</height>
+      <unit>meters</unit>
+    </size>
+    <conditions>
+      <time_of_day>dusk</time_of_day>
+      <weather>light rain</weather>
+      <temperature>25</temperature>
+      <humidity>80</humidity>
+      <gravity>9.8</gravity>
+      <light_level>40</light_level>
+    </conditions>
+    <terrain_features>
+      <feature>
+        <id>tf_001</id>
+        <type>dense foliage</type>
+        <location>
+          <x>2500</x>
+          <y>1500</y>
+        </location>
+        <properties>
+          <density>0.8</density>
+          <passable>true</passable>
+          <provides_cover>true</provides_cover>
+        </properties>
+      </feature>
+    </terrain_features>
+    <quantum_phenomena>
+      <phenomenon>
+        <id>qp_001</id>
+        <type>superposition</type>
+        <location>
+          <x>3000</x>
+          <y>2000</y>
+        </location>
+        <radius>100</radius>
+        <description>Area where multiple terrain types coexist until observed</description>
+      </phenomenon>
+    </quantum_phenomena>
+    <resources>
+      <resource>
+        <id>res_001</id>
+        <type>water source</type>
+        <location>
+          <x>1000</x>
+          <y>4000</y>
+        </location>
+        <quantity>500</quantity>
+        <quality>0.9</quality>
+      </resource>
+    </resources>
+  </environment>
+  <npcs>
+    <npc>
+      <id>npc_001</id>
+      <name>Greg</name>
+      <location>
+        <x>2000</x>
+        <y>3000</y>
+      </location>
+      <state>
+        <health>90</health>
+        <energy>75</energy>
+        <hydration>60</hydration>
+        <carrying_capacity>50</carrying_capacity>
+      </state>
+      <emotional_state>
+        <primary_emotion>determined</primary_emotion>
+        <intensity>7</intensity>
+      </emotional_state>
+      <skills>
+        <skill>
+          <name>survival</name>
+          <level>8</level>
+        </skill>
+        <skill>
+          <name>observation</name>
+          <level>7</level>
+        </skill>
+      </skills>
+      <inventory>
+        <item>
+          <id>item_001</id>
+          <name>multi-tool</name>
+          <quantity>1</quantity>
+          <properties>
+            <condition>good</condition>
+            <uses_left>50</uses_left>
+          </properties>
+        </item>
+      </inventory>
+      <knowledge>
+        <info>aware of water source to the south</info>
+        <info>has seen strange fruit in the area</info>
+      </knowledge>
+      <action>
+        <type>MOVE</type>
+        <details>
+          <direction>
+            <x>0</x>
+            <y>1</y>
+          </direction>
+          <speed>1</speed>
+        </details>
+        <intention>Searching for water</intention>
+      </action>
+    </npc>
+  </npcs>
+  <interactions>
+    <interaction>
+      <id>int_001</id>
+      <type>NPC_ENVIRONMENT</type>
+      <npc_id>npc_001</npc_id>
+      <target_id>tf_001</target_id>
+      <action>observe</action>
+      <outcome>
+        <description>Greg carefully observes the dense foliage, noting potential hiding spots.</description>
+        <npc_effects>
+          <effect>
+            <npc_id>npc_001</npc_id>
+            <changes>
+              <knowledge>add: dense foliage provides good cover</knowledge>
+            </changes>
+          </effect>
+        </npc_effects>
+        <environment_effects/>
+        <quantum_effects/>
+      </outcome>
+    </interaction>
+  </interactions>
+  <emergent_events>
+    <event>
+      <id>ee_001</id>
+      <description>The light rain has caused some of the strange fruit to bloom, releasing spores into the air.</description>
+      <affected_area>
+        <center>
+          <x>2500</x>
+          <y>2500</y>
+        </center>
+        <radius>300</radius>
+      </affected_area>
+      <effects>
+        <effect>Visibility in the affected area is reduced by 20%</effect>
+        <effect>NPCs in the area may experience mild disorientation</effect>
+      </effects>
+    </event>
+  </emergent_events>
+</game_state>
