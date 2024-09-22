@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A[Start] --> B[Initialize System]
     B --> C[Load Initial Game State]
@@ -33,3 +34,4 @@ graph TD
     J3 --> K
 
     K --> |Next Turn| D
+```
